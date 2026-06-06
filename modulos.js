@@ -54,13 +54,13 @@ export const modulos = [
         description: "Histórico financeiro e métricas de conversão dos últimos 6 meses em tempo real.",
         imageSrc: "/analysis-real.png",
         imageAlt: "Análise de Resultados"
-    }
+    },
     {
         id: "novo-modulo",
         icon: "🔌",
         title: "Novo Módulo de Instalação",
         description: "Descrição rápida do que esse módulo faz e como ajuda o eletricista.",
-        imageSrc: "/novo-modulo.png",
+        imageSrc: "/dashboard-mockup.png",
         imageAlt: "Tela do Novo Módulo"
     }
 
