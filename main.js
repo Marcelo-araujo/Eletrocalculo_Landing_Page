@@ -1,5 +1,20 @@
+import { modulos } from './modulos.js';
+
+// Render Modules
+const modulesGrid = document.getElementById('modules-grid');
+if (modulesGrid) {
+    modulesGrid.innerHTML = modulos.map(mod => `
+        <div class="feature-card reveal">
+            <div class="feature-icon">${mod.icon}</div>
+            <h3>${mod.title}</h3>
+            <p>${mod.description}</p>
+            <img src="${mod.imageSrc}" alt="${mod.imageAlt}" class="app-screenshot feature-preview">
+        </div>
+    `).join('');
+}
+
 // Scroll Reveal Animation
-const revealElements = document.querySelectorAll('.reveal');
+let revealElements = document.querySelectorAll('.reveal');
 
 const revealOnScroll = () => {
     const triggerBottom = window.innerHeight * 0.85;
